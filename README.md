@@ -5,8 +5,21 @@ This repository contains the code and documentation for the courses of Artificia
 ## Getting Started
 
 1. Clone the repository
-2. Install the dependencies
-3. Run the code
+2. Create a virtual environment
+3. Activate the virtual environment
+4. Add a .env file with the following:
+
+    ```
+    PYTHONPATH=<path-to-ai>
+    ```
+
+5. Install the dependencies
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+6. Explore the notebooks
 
 ## Courses
 
