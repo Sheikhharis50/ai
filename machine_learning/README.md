@@ -6,6 +6,6 @@
 
 ### Weeks
 
-1. [Introduction to Machine Learning](./course1/week1/README.md)
+1. [Introduction to Machine Learning](./course1/README.md)
 2. Linear Regression with Multiple Variables
 3. Classification

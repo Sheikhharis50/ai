@@ -1,6 +1,7 @@
+import copy
 import math
 
-import numpy as np, copy
+import numpy as np
 
 
 def predict(w, b, x):
@@ -173,3 +174,40 @@ def gradient_descent_vectorized(x, y, w_in, b_in, alpha, num_iters):
             print(f"Iteration {i:4}: Cost {J_history[-1]:0.2e} ")
 
     return w, b, J_history  # return final w,b and J history for graphing
+
+
+def run_gradient_descent(X, y, iterations=1000, alpha=1e-6):
+    m, n = X.shape
+    # initialize parameters
+    initial_w = np.zeros(n)
+    initial_b = 0
+    # run gradient descent
+    w_out, b_out, hist_out = gradient_descent_vectorized(
+        X,
+        y,
+        initial_w,
+        initial_b,
+        alpha,
+        iterations,
+    )
+    print(f"w,b found by gradient descent: w: {w_out}, b: {b_out:0.4f}")
+
+    return (w_out, b_out)
+
+
+def zscore_normalize_features(X, rtn_ms=False):
+    """
+    returns z-score normalized X by column
+    Args:
+        X : (numpy array (m,n))
+    Returns
+        X_norm: (numpy array (m,n)) input normalized by column
+    """
+    mu = np.mean(X, axis=0)
+    sigma = np.std(X, axis=0)
+    X_norm = (X - mu) / sigma
+
+    if rtn_ms:
+        return (X_norm, mu, sigma)
+    else:
+        return X_norm
