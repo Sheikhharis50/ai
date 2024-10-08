@@ -12,10 +12,12 @@ executing==2.1.0
 fonttools==4.54.1
 ipykernel==6.29.5
 ipython==8.27.0
+ipywidgets==8.1.5
 jedi==0.19.1
 joblib==1.4.2
 jupyter_client==8.6.3
 jupyter_core==5.7.2
+jupyterlab_widgets==3.0.13
 kiwisolver==1.4.7
 matplotlib==3.9.2
 matplotlib-inline==0.1.7
@@ -48,3 +50,4 @@ tornado==6.4.1
 traitlets==5.14.3
 typing_extensions==4.12.2
 wcwidth==0.2.13
+widgetsnbextension==4.0.13
