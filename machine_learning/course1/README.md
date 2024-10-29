@@ -16,3 +16,5 @@
 ## Week 3
 
 1. Classification ([Practice Notebook](./week3/practice/notebook.ipynb))
+2. Cost Function ([Practice Notebook](./week3/practice/notebook.ipynb))
+3. Gradient Descent ([Practice Notebook](./week3/practice/notebook.ipynb))

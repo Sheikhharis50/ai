@@ -2,10 +2,6 @@
 
 > [Coursera](https://www.coursera.org/specializations/machine-learning-introduction)
 
-## Course 1: Supervised Machine Learning: Regression and Classification
+## Course 1: [Supervised Machine Learning: Regression and Classification](./course1/README.md)
 
-### Weeks
-
-1. [Introduction to Machine Learning](./course1/README.md)
-2. Linear Regression with Multiple Variables
-3. Classification
+## Course 2: [Advanced Learning Algorithms](./course2/README.md)
